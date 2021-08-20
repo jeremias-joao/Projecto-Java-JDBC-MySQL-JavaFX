@@ -85,7 +85,7 @@ public class ClienteDAO {
     }
  
     //Método para buscar todos os registros cadastrados
-    public ArrayList buscarTudo() {
+    public ArrayList<Cliente> buscarTudo() {
         ArrayList<Cliente> listaClientes = new ArrayList<>();
         try {
             st = con.prepareStatement("select * from cliente");
